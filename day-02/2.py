@@ -6,28 +6,28 @@ point = 0
 for item in data:
     list(item)
     if item[2] == "X":
-        point += 1
+        point += 0
         if item[0] == "A":
             point += 3
         if item[0] == "B":
-            point += 0
+            point += 1
         if item[0] == "C":
-            point += 6
+            point += 2
     if item[2] == "Y":
-        point += 2
-        if item[0] == "A":
-            point += 6
-        if item[0] == "B":
-            point += 3
-        if item[0] == "C":
-            point += 0
-    if item[2] == "Z":
         point += 3
         if item[0] == "A":
-            point += 0
+            point += 1
         if item[0] == "B":
-            point += 6
+            point += 2
         if item[0] == "C":
             point += 3
+    if item[2] == "Z":
+        point += 6
+        if item[0] == "A":
+            point += 2
+        if item[0] == "B":
+            point += 3
+        if item[0] == "C":
+            point += 1
 
 print('じゃんけんで',point,'貯めた')
