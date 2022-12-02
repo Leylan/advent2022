@@ -15,10 +15,5 @@ for item in data:
 
 elf_list.sort(reverse=True)
 
-print(elf_list)
-print(elf_list[0])
-print(elf_list[1])
-print(elf_list[2])
-
 elf_sum = elf_list[0] + elf_list[1] + elf_list[2]
-print(elf_sum)
+print('最もカロリーを持っているエルフのトップ３は合計',elf_sum,'カロリーを持っている')
